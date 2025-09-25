@@ -24,7 +24,7 @@ With just one reference audio sample, you can generate natural-sounding speech i
 
 📂 Project Structure
 voice-cloning-xtts/
-│── d.py              # Main script (voice cloning example)
+│── Voice_Cloning.py              # Main script (voice cloning example)
 │── input.wav         # Reference audio (speaker voice sample)
 │── output.wav        # Generated speech
 │── requirements.txt  # Dependencies
@@ -51,7 +51,7 @@ Use a clear recording (mono, 16kHz preferred).
 
 Run the script:
 
-python d.py
+python Voice_Cloning.py
 
 
 The generated cloned voice will be saved as:
