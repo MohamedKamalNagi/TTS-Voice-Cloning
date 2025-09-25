@@ -1,60 +1,64 @@
-🎙️ Voice Cloning with XTTS v2
+Voice Cloning with XTTS v2
+
+
+
+
+
+
+
 
 This project demonstrates multilingual text-to-speech (TTS) with voice cloning using the Coqui TTS
  library and the XTTS v2 model.
 
-It allows you to:
+With just one reference audio sample, you can generate natural-sounding speech in multiple languages.
 
-Clone a voice from a sample audio file (input.wav).
+✨ Features
 
-Generate speech in multiple languages.
+🎤 Voice Cloning – Clone a voice from a short audio recording (input.wav).
 
-Save the output to a .wav file.
+🌍 Multilingual TTS – Generate speech in English, Arabic, French, German, and more.
 
-🚀 Features
+⚡ Fast Inference – Runs on GPU (CUDA) if available.
 
-✅ Voice cloning from a reference audio file.
+💾 File Output – Save generated audio directly as .wav.
 
-✅ Support for multilingual TTS.
-
-✅ GPU acceleration with CUDA if available.
-
-✅ Save generated speech to an audio file.
+📂 Project Structure
+voice-cloning-xtts/
+│── d.py              # Main script (voice cloning example)
+│── input.wav         # Reference audio (speaker voice sample)
+│── output.wav        # Generated speech
+│── requirements.txt  # Dependencies
+│── README.md         # Documentation
 
 📦 Installation
-
-Clone this repository:
-
+1️⃣ Clone this repo
 git clone https://github.com/your-username/voice-cloning-xtts.git
 cd voice-cloning-xtts
 
-
-Create a virtual environment (recommended):
-
+2️⃣ Create a virtual environment
 python -m venv venv
 venv\Scripts\activate   # On Windows
 source venv/bin/activate   # On Linux/Mac
 
-
-Install dependencies:
-
-pip install torch torchvision torchaudio
-pip install TTS
+3️⃣ Install dependencies
+pip install -r requirements.txt
 
 ▶️ Usage
 
-Place your reference voice file in the project folder (e.g., input.wav).
+Place your reference audio as input.wav in the project folder.
+
+Use a clear recording (mono, 16kHz preferred).
 
 Run the script:
 
 python d.py
 
 
-The cloned speech will be saved as:
+The generated cloned voice will be saved as:
 
 output.wav
 
-📝 Example
+📝 Example Code
 tts.tts_to_file(
     text="Hello, this is a voice cloning test. Nice to meet you!",
     file_path="output.wav",
@@ -63,19 +67,16 @@ tts.tts_to_file(
     split_sentences=True
 )
 
-📂 Project Structure
-├── d.py              # Main script (voice cloning example)
-├── input.wav         # Reference speaker audio (provide your own)
-├── output.wav        # Generated speech
-├── README.md         # Documentation
 
-⚡ Notes
+You can change the language by modifying language="en" to "ar", "fr", "de", etc.
 
-Make sure input.wav is a clear voice recording (mono, 16kHz preferred).
+⚡ Tips
 
-Use CUDA for faster inference if available.
+✅ Use CUDA GPU if available (device = "cuda") for faster generation.
 
-You can change language="en" to "ar", "fr", "de", etc.
+✅ Test different reference audios for better cloning quality.
+
+✅ Try longer texts with split_sentences=True for smoother audio.
 
 🤝 Credits
 
