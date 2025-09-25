@@ -1,4 +1,4 @@
-Voice Cloning with XTTS v2
+🎙️ <span style="font-size:40px;">Voice Cloning with XTTS v2</span>
 
 
 
@@ -7,12 +7,7 @@ Voice Cloning with XTTS v2
 
 
 
-This project demonstrates multilingual text-to-speech (TTS) with voice cloning using the Coqui TTS
- library and the XTTS v2 model.
-
-With just one reference audio sample, you can generate natural-sounding speech in multiple languages.
-
-✨ Features
+<span style="font-size:28px;">✨ Features</span>
 
 🎤 Voice Cloning – Clone a voice from a short audio recording (input.wav).
 
@@ -22,43 +17,31 @@ With just one reference audio sample, you can generate natural-sounding speech i
 
 💾 File Output – Save generated audio directly as .wav.
 
-📂 Project Structure
-voice-cloning-xtts/
-│── d.py              # Main script (voice cloning example)
-│── input.wav         # Reference audio (speaker voice sample)
-│── output.wav        # Generated speech
-│── requirements.txt  # Dependencies
-│── README.md         # Documentation
-
-📦 Installation
-1️⃣ Clone this repo
+<span style="font-size:28px;">📦 Installation</span>
+<span style="font-size:22px;">1️⃣ Clone this repo</span>
 git clone https://github.com/your-username/voice-cloning-xtts.git
 cd voice-cloning-xtts
 
-2️⃣ Create a virtual environment
+<span style="font-size:22px;">2️⃣ Create a virtual environment</span>
 python -m venv venv
 venv\Scripts\activate   # On Windows
 source venv/bin/activate   # On Linux/Mac
 
-3️⃣ Install dependencies
+<span style="font-size:22px;">3️⃣ Install dependencies</span>
 pip install -r requirements.txt
 
-▶️ Usage
+<span style="font-size:28px;">▶️ Usage</span>
 
 Place your reference audio as input.wav in the project folder.
-
-Use a clear recording (mono, 16kHz preferred).
 
 Run the script:
 
 python d.py
 
 
-The generated cloned voice will be saved as:
+The generated cloned voice will be saved as output.wav.
 
-output.wav
-
-📝 Example Code
+<span style="font-size:28px;">📝 Example Code</span>
 tts.tts_to_file(
     text="Hello, this is a voice cloning test. Nice to meet you!",
     file_path="output.wav",
@@ -66,20 +49,3 @@ tts.tts_to_file(
     language="en",
     split_sentences=True
 )
-
-
-You can change the language by modifying language="en" to "ar", "fr", "de", etc.
-
-⚡ Tips
-
-✅ Use CUDA GPU if available (device = "cuda") for faster generation.
-
-✅ Test different reference audios for better cloning quality.
-
-✅ Try longer texts with split_sentences=True for smoother audio.
-
-🤝 Credits
-
-Coqui TTS
-
-PyTorch
