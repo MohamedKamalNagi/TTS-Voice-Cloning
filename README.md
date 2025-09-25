@@ -1,4 +1,4 @@
-🎙️ <span style="font-size:40px;">Voice Cloning with XTTS v2</span>
+🎙️ <span style="font-size:80px;">Voice Cloning with XTTS v2</span>
 
 
 
