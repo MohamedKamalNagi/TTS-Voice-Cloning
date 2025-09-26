@@ -32,7 +32,7 @@ voice-cloning-xtts/
 
 📦 Installation
 1️⃣ Clone this repo
-git clone https://github.com/your-username/voice-cloning-xtts.git
+git clone (https://github.com/MohamedKamalNagi/TTS-Voice-Cloning)
 cd voice-cloning-xtts
 
 2️⃣ Create a virtual environment
